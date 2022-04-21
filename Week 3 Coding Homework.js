@@ -104,13 +104,13 @@ if (average1 > average2 || average2 > average1){
 }
 }
 
-var isHotOutside = 0;
+function willBuyDrink (isHotOutside, moneyInPocket){
+    if (isHotOutside == true && moneyInPocket > 10.50){
+        return true;
+    }
+}
+var isHotOutside = true;
 var moneyInPocket = 0;
 
-function willBuyDrink (isHotOutside, moneyInPocket){
-while (isHotOutside > 80 && moneyInPocket > 10.50){
-    return (true);
-}
-}
-
+console.log (willBuyDrink(true, 9));
 
